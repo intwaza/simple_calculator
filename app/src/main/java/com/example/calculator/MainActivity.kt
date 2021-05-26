@@ -21,12 +21,10 @@ class MainActivity : AppCompatActivity() {
         var tvResult = findViewById<TextView>(R.id.tvResult)
 
         btnAdd.setOnClickListener {
-            if(etNumber1.text.toString() == ""){
+            if(etNumber1.text.toString() == "" || etNumber2.text.toString() == ""){
                 Toast.makeText(baseContext,"Enter a number",Toast.LENGTH_SHORT).show()
             }
-            else if(etNumber2.text.toString() == ""){
-                Toast.makeText(baseContext,"Enter a number",Toast.LENGTH_SHORT).show()
-            }
+
             else {
                 var number1 = etNumber1.text.toString().toInt()
                 var number2 = etNumber2.text.toString().toInt()
@@ -35,10 +33,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         btnSubtract.setOnClickListener {
-            if(etNumber1.text.toString() == ""){
-                Toast.makeText(baseContext,"Enter a number",Toast.LENGTH_SHORT).show()
-            }
-            else if(etNumber2.text.toString() == ""){
+            if(etNumber1.text.toString() == "" || etNumber2.text.toString() == ""){
                 Toast.makeText(baseContext,"Enter a number",Toast.LENGTH_SHORT).show()
             }
             else {
@@ -49,10 +44,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         btnMultiply.setOnClickListener {
-            if(etNumber1.text.toString() == ""){
-                Toast.makeText(baseContext,"Enter a number",Toast.LENGTH_SHORT).show()
-            }
-            else if(etNumber2.text.toString() == ""){
+            if(etNumber1.text.toString() == "" || etNumber2.text.toString() == ""){
                 Toast.makeText(baseContext,"Enter a number",Toast.LENGTH_SHORT).show()
             }
             else {
@@ -63,10 +55,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         btnModulus.setOnClickListener {
-            if(etNumber1.text.toString() == ""){
-                Toast.makeText(baseContext,"Enter a number",Toast.LENGTH_SHORT).show()
-            }
-            else if(etNumber2.text.toString() == ""){
+            if(etNumber1.text.toString() == "" || etNumber2.text.toString() == ""){
                 Toast.makeText(baseContext,"Enter a number",Toast.LENGTH_SHORT).show()
             }
             else {
